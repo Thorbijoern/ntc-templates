@@ -11,6 +11,10 @@
 #
 Template, Hostname, Platform, Command
 
+# aginode only has 1 firmware/OS as far as i can see and no specific name for it
+# TODO: add template
+aginode_show_info.textfsm, .*, aginode, show info
+
 alcatel_aos_show_interfaces_ethernet.textfsm, .*, alcatel_aos, sh[[ow]] (in[[terfaces]] e[[thernet]]|in[[terfaces]])$
 alcatel_aos_show_lldp_remote-system.textfsm, .*, alcatel_aos, sh[[ow]] lldp r[[emote-system]]
 alcatel_aos_show_interfaces_status.textfsm, .*, alcatel_aos, sh[[ow]] in[[terfaces]] st[[atus]]
@@ -629,14 +633,24 @@ ericsson_ipos_show_isis_adjacency.textfsm, .*, ericsson_ipos, sh[[ow]] isis adja
 ericsson_ipos_show_version.textfsm, .*, ericsson_ipos, sh[[ow]] ver[[sion]]
 ericsson_ipos_show_arp.textfsm, .*, ericsson_ipos, sh[[ow]] ar[[p]]
 
-extreme_exos_show_ports_information_detail.textfsm, .*, extreme_exos, show ports information detail
-extreme_exos_show_ports_description.textfsm, .*, extreme_exos, show ports description
-extreme_exos_show_ports_information.textfsm, .*, extreme_exos, show ports information
-extreme_exos_show_vlan_description.textfsm, .*, extreme_exos, show vlan description
-extreme_exos_show_ipconfig.textfsm, .*, extreme_exos, show ipconfig
-extreme_exos_show_sharing.textfsm, .*, extreme_exos, show sharing
-extreme_exos_show_iparp.textfsm, .*, extreme_exos, show iparp
+extreme_exos_show_ports_information_detail.textfsm, .*, extreme_exos, sh[[ow]] ports in[[formation]] detail
+extreme_exos_show_ports_description.textfsm, .*, extreme_exos, sh[[ow]] ports des[[cription]]
+extreme_exos_show_ports_information.textfsm, .*, extreme_exos, sh[[ow]] ports in[[formation]]
+extreme_exos_show_vlan_description.textfsm, .*, extreme_exos, sh[[ow]] vlan des[[cription]]
+extreme_exos_show_ipconfig.textfsm, .*, extreme_exos, sh[[ow]] ipconfig
+extreme_exos_show_sharing.textfsm, .*, extreme_exos, sh[[ow]] sharing
+# TODO: check templates
+extreme_exos_show_iparp.textfsm, .*, extreme_exos, sh[[ow]] iparp
 extreme_exos_show_fdb.textfsm, .*, extreme_exos, sh[[ow]] fdb
+# TODO: add templates
+extreme_exos_show_switch.textfsm, .*, extreme_exos, sh[[ow]] sw[[itch]]
+extreme_exos_show_version.textfsm, .*, extreme_exos, sh[[ow]] ve[[rsion]]
+extreme_exos_show_dhcp-server.textfsm, .*, extreme_exos, sh[[ow]] dhcp-server (\S+)?
+extreme_exos_show_lldp_neighbors.textfsm, .*, extreme_exos, sh[[ow]] lldp neigh[[bors]]
+extreme_exos_ls.textfsm, .*, extreme_exos, ls
+extreme_exos_show_version_images.textfsm, .*, extreme_exos, sh[[ow]] version images
+extreme_exos_show_stacking.textfsm, .*, extreme_exos, sh[[ow]] stacking
+extreme_exos_show_inline-power_stat.textfsm, .*, extreme_exos, sh[[ow]] inline-power stat
 
 extreme_slxos_show_ip_interface_brief.textfsm, .*, extreme_slxos, sh[[ow]] ip int[[erface]] br[[ief]]
 extreme_slxos_show_clock.textfsm, .*, extreme_slxos, show clock
