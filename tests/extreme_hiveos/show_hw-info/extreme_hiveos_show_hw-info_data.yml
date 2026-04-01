@@ -1,0 +1,11 @@
+---
+parsed_sample:
+  - ethernet_mac: "90b8:326b:69c0"
+    serial_num: "03052112161805"
+    hardware_rev: "02"
+    product_name: "AP305C"
+    hardware_id: "0"
+    manufacturing_date: "20211216"
+    number_of_mac_addr: "64"
+    manufacturing_version: "01"
+    antenna_id: "0"

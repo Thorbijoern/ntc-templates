@@ -1,0 +1,27 @@
+Value ETHERNET_MAC ([\da-fA-F:]+)
+Value SERIAL_NUM (\d+)
+Value HARDWARE_REV (\d+)
+Value PRODUCT_NAME (\w+)
+Value HARDWARE_ID (\d)
+Value MANUFACTURING_DATE (\d+)
+Value NUMBER_OF_MAC_ADDR (\d+)
+Value MANUFACTURING_VERSION (\d+)
+Value ANTENNA_ID (\d)
+#Value AEROHIVE_HARDWARE_KEY ()
+#Value HW_AUTH_DEVICE_STATUS (success|fail)
+#Value TPM_STATUS (success|fail)
+
+Start
+    ^Ethernet MAC address:\s+${ETHERNET_MAC}
+    ^Serial number:\s+${SERIAL_NUM}
+    ^Hardware revision:\s+${HARDWARE_REV}
+    ^Product name:\s+${PRODUCT_NAME}
+    ^Hardware ID:\s+${HARDWARE_ID}
+    ^Manufacturing date:\s+${MANUFACTURING_DATE}
+    ^Number of MAC addresses:\s+${NUMBER_OF_MAC_ADDR}
+    ^Manufacturing version:\s+${MANUFACTURING_VERSION}
+    ^Antenna ID:\s+${ANTENNA_ID}
+    ^Aerohive hardware key:
+    ^HW Auth Device Status:\s+.*
+    ^TPM Status:\s+.* -> Record
+    ^.* -> Error
