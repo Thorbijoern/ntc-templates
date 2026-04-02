@@ -12,16 +12,16 @@ Value ANTENNA_ID (\d)
 #Value TPM_STATUS (success|fail)
 
 Start
-    ^Ethernet MAC address:\s+${ETHERNET_MAC}
-    ^Serial number:\s+${SERIAL_NUM}
-    ^Hardware revision:\s+${HARDWARE_REV}
-    ^Product name:\s+${PRODUCT_NAME}
-    ^Hardware ID:\s+${HARDWARE_ID}
-    ^Manufacturing date:\s+${MANUFACTURING_DATE}
-    ^Number of MAC addresses:\s+${NUMBER_OF_MAC_ADDR}
-    ^Manufacturing version:\s+${MANUFACTURING_VERSION}
-    ^Antenna ID:\s+${ANTENNA_ID}
-    ^Aerohive hardware key:
-    ^HW Auth Device Status:\s+.*
-    ^TPM Status:\s+.* -> Record
-    ^.* -> Error
+  ^Ethernet MAC address:\s+${ETHERNET_MAC}
+  ^Serial number:\s+${SERIAL_NUM}
+  ^Hardware revision:\s+${HARDWARE_REV}
+  ^Product name:\s+${PRODUCT_NAME}
+  ^Hardware ID:\s+${HARDWARE_ID}
+  ^Manufacturing date:\s+${MANUFACTURING_DATE}
+  ^Number of MAC addresses:\s+${NUMBER_OF_MAC_ADDR}
+  ^Manufacturing version:\s+${MANUFACTURING_VERSION}
+  ^Antenna ID:\s+${ANTENNA_ID}
+  ^Aerohive hardware key:
+  ^HW Auth Device Status:\s+.*
+  ^TPM Status:\s+.* -> Record
+  ^.* -> Error
